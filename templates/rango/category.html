@@ -21,6 +21,13 @@
      The specified category does not exist.
      {%endif %}
      </div>
+     <div>
+        {%  if category %}
+            <a href="{% url 'add_page' category_name_slug=category.slug %}">Add a new page</a> <br />
+        {% else %}
+            The specified category doesn't exist
+        {% endif %}
+         </div>
    </body>
 
  </html>
