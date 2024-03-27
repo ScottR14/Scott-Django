@@ -133,3 +133,4 @@ USE_TZ = True
 
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
+LOGIN_URL = 'rango:login'
